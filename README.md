@@ -55,3 +55,16 @@ A multiuser blog portal with support for blogs and personalities per user.
 * Figure out how git submodules work
 * Get a deeper programming experience
 * Learn how to use PHPUnit/HackUnit
+
+# Libraries
+## For running
+* [facebook/hhvm](https://github.com/facebook/hhvm)
+* [composer/composer](https://github.com/composer/composer)
+* [alexgarett/violin](https://github.com/alexgarrett/violin)
+* [erusev/parsedown](https://github.com/erusev/parsedown)
+* [erusev/parsedown-extra](https://github.com/erusev/parsedown-extra)?
+
+## For developing
+* [phpunit/phpunit](https://github.com/sebastianbergmann/phpunit)
+* [hackpack/hackunit](https://github.com/HackPack/HackUnit)
+* [joseph-lenton/php-error](https://github.com/JosephLenton/PHP-Error/)? (if it works with HackLang)
