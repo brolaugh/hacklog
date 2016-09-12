@@ -1,3 +1,7 @@
+
+# HackLog
+A multiuser blog portal with support for blogs and personalities per user.
+
 # Conceive
 
 ## What should you be able to do
@@ -13,6 +17,8 @@
 * 18+ filter
 
 ## Technical details
+* General
+  * Use composer
 * Security
   * XSS safe
   * CSRF safe
@@ -38,3 +44,14 @@
   * Recaptcha
   * Uses JSON for data transfer with Ajax and eventual other frontend
   * XML supported in the future?
+
+# Goals
+## For the project
+* Create a functioning and expandable blogging portal
+
+## Personal
+* Learn HackLang
+* Learn how to combine multiple services together eg. media uploading service
+* Figure out how git submodules work
+* Get a deeper programming experience
+* Learn how to use PHPUnit/HackUnit
