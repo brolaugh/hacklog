@@ -15,10 +15,12 @@ A multiuser blog portal with support for blogs and personalities per user.
 * Mobile friendly
 * Multiple possible skins to choose from
 * 18+ filter
+* Multiple language support
 
 ## Technical details
 * General
   * Use composer
+  * Minimal reloading -> Ajax
 * Security
   * XSS safe
   * CSRF safe
@@ -40,14 +42,15 @@ A multiuser blog portal with support for blogs and personalities per user.
   * Uses twig for rendering of html
   * Bootstrap
   * Posts are written in markdown. (Alternatives org-mode)
+  * Primarily jQuery, plain javascript, TYPESCRIPT(???) or CoffieScript(???)?
 * Fullstack
   * Recaptcha
   * Uses JSON for data transfer with Ajax and eventual other frontend
   * XML supported in the future?
-
 # Goals
 ## For the project
 * Create a functioning and expandable blogging portal
+* Easily expandable
 
 ## Personal
 * Learn HackLang
