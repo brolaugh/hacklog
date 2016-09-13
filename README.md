@@ -66,6 +66,7 @@ A multiuser blog portal with support for blogs and personalities per user.
 * [alexgarett/violin](https://github.com/alexgarrett/violin)
 * [erusev/parsedown](https://github.com/erusev/parsedown)
 * [erusev/parsedown-extra](https://github.com/erusev/parsedown-extra)?
+* Error flasher, develop on my own?
 
 ## For developing
 * [phpunit/phpunit](https://github.com/sebastianbergmann/phpunit)
