@@ -29,7 +29,7 @@ A multiuser blog portal with support for blogs and personalities per user.
   * Swedish PUL compliant
 * Language and processing
   * Processed by the HHVM engine
-  * Written in HackLang
+  * Written in HackLang (or atleast PHP 7 typed)
   * Primarily uses nginx
 * Backend
   * MVC structure
@@ -47,6 +47,7 @@ A multiuser blog portal with support for blogs and personalities per user.
   * Recaptcha
   * Uses JSON for data transfer with Ajax and eventual other frontend
   * XML supported in the future?
+
 # Goals
 ## For the project
 * Create a functioning and expandable blogging portal
