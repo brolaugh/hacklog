@@ -1,4 +1,3 @@
-
 # HackLog
 A multiuser blog portal with support for blogs and personalities per user.
 
@@ -34,11 +33,14 @@ A multiuser blog portal with support for blogs and personalities per user.
 * Backend
   * MVC structure
   * Can use both cookies and sessions to check login
-  * Separate *non text media* uploading service
+  * Media (Image, video, sound)
+    * Media is saved to filesystem
+    * File location stored in database
+    * Hack does stuff and tells nginx to deliver file
   * Hashed and salted password
   * Relational database
   * Single database, no cluster, backups possible
-* Frondend
+* Frontend
   * Uses twig for rendering of html
   * Bootstrap
   * Posts are written in markdown. (Alternatives org-mode)
@@ -68,6 +70,7 @@ A multiuser blog portal with support for blogs and personalities per user.
 * [erusev/parsedown](https://github.com/erusev/parsedown)
 * [erusev/parsedown-extra](https://github.com/erusev/parsedown-extra)?
 * Error flasher, develop on my own?
+* [sybio/image-workshop](https://github.com/Sybio/ImageWorkshop)
 
 ## For developing
 * [phpunit/phpunit](https://github.com/sebastianbergmann/phpunit)
