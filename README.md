@@ -4,7 +4,7 @@ A multiuser blog portal with support for blogs and personalities per user.
 # Conceive
 
 ## What should you be able to do
-* Post blogposts
+* Post blog posts
 * Have multiple personalities (personal, hobby, professional etc.)
 * Comment on blog posts
 * Schedule the publishing of a blog post
@@ -15,11 +15,13 @@ A multiuser blog portal with support for blogs and personalities per user.
 * Multiple possible skins to choose from
 * 18+ filter
 * Multiple language support
+  * Ability to select the language a post is written in (Google Translate API?)
 
 ## Technical details
 * General
   * Use composer
   * Minimal reloading -> Ajax
+    * URL is updated accordingly
 * Security
   * XSS safe
   * CSRF safe
