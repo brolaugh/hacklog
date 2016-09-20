@@ -22,6 +22,11 @@ A multiuser blog portal with support for blogs and personalities per user.
   * Use composer
   * Minimal reloading -> Ajax
     * URL is updated accordingly
+  * Ability to switch between GET variables and SEO optimized url
+    * As follows
+      * SEO domain.tld/blogname/post/postname
+      * GET domain.tld?b=blogname&url=/post/postname
+    * This would probably help with building API in future
 * Security
   * XSS safe
   * CSRF safe
