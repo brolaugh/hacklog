@@ -3,7 +3,6 @@
 
 namespace HackLog\Controller;
 
-
 use HackLog\Core\Controller;
 
 class BlogController extends Controller
@@ -50,5 +49,4 @@ class BlogController extends Controller
     {
 
     }
-
 }

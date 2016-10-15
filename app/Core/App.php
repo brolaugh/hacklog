@@ -3,16 +3,15 @@
 
 namespace HackLog\Core;
 
-
 class App
 {
-    static $page;
-    static $lang;
-    static $tagged;
-    static $date;
-    static $dateRange = ['start' => null, 'end' => null];
-    static $controller;
-    static $method;
+    public static $page;
+    public static $lang;
+    public static $tagged;
+    public static $date;
+    public static $dateRange = ['start' => null, 'end' => null];
+    public static $controller;
+    public static $method;
 
 
     /**
@@ -42,5 +41,4 @@ class App
          * When it has found all the parts listed above it returns the uri back with the parts removed
          */
     }
-
 }

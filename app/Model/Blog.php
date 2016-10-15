@@ -3,7 +3,6 @@
 
 namespace HackLog\Model;
 
-
 class Blog extends Taggable
 {
     private $name;
@@ -16,7 +15,8 @@ class Blog extends Taggable
     {
         $serial = parent::bsonSerialize();
         array_merge(
-            $serial, [
+            $serial,
+            [
                 'name' => $this->name,
                 'urlName' => $this->urlName,
                 'owner' => $this->owner,

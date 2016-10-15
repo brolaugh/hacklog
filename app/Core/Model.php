@@ -3,7 +3,6 @@
 
 namespace HackLog\Core;
 
-
 use MongoDB\BSON\ObjectID;
 use MongoDB\BSON\Persistable;
 use MongoDB\BSON\UTCDateTime;

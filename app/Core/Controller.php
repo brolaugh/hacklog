@@ -3,7 +3,6 @@
 
 namespace HackLog\Core;
 
-
 class Controller
 {
     /**

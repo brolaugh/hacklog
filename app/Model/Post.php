@@ -3,7 +3,6 @@
 
 namespace HackLog\Model;
 
-
 class Post extends Taggable
 {
     private $title;
@@ -19,7 +18,8 @@ class Post extends Taggable
     {
         $serial = parent::bsonSerialize();
         $serial = array_merge(
-            $serial, [
+            $serial,
+            [
             'title' => $this->title,
             'urlTitle' => $this->urlTitle,
             'content' => $this->content,
@@ -46,4 +46,3 @@ class Post extends Taggable
         $this->comments = $data['comments'];
     }
 }
-

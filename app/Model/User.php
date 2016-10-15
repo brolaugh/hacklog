@@ -3,7 +3,6 @@
 
 namespace HackLog\Model;
 
-
 use HackLog\Core\Model;
 
 class User extends Model
@@ -23,7 +22,8 @@ class User extends Model
     {
         $serial = parent::bsonSerialize();
         array_merge(
-            $serial, [
+            $serial,
+            [
                 'username' => $this->username,
                 'email' => $this->email,
                 'password' => $this->password,

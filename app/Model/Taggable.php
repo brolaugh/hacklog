@@ -3,7 +3,6 @@
 
 namespace HackLog\Model;
 
-
 use HackLog\Core\Model;
 
 class Taggable extends Model
