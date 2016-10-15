@@ -8,6 +8,7 @@ use HackLog\Core\Controller;
 class BlogController extends Controller
 {
     private $blogName;
+
     /**
      * Blog constructor.
      *
@@ -46,6 +47,40 @@ class BlogController extends Controller
      * @param $query
      */
     public function search(string $query)
+    {
+
+    }
+
+    /**
+     * Page for writing and editing posts
+     *
+     * @param string $urlTitle | if set it'll try to get the post specified and throw Error 404 on failure
+     */
+    public function compose(string $urlTitle = '')
+    {
+
+    }
+
+    /**
+     * Handles the form sent by the compose method
+     */
+    public function composeRequest()
+    {
+
+    }
+
+    /**
+     * The settings for the blog $this->blogName
+     */
+    public function settings()
+    {
+
+    }
+
+    /**
+     * Handles the form sent by the settings method
+     */
+    public function settingsRequest()
     {
 
     }
