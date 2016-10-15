@@ -16,7 +16,7 @@ blogname.domain.tld = domain.tld/blogname
 | /{blogname}                    | Index for a blog                                                                                                                     |
 | /{blogname}/{postname}         | Visit a particular blog post if postname is valid and postname isn't a method in the controller                                      |
 | /{blogname}/post/{postname}    | Visit a particular blog post                                                                                                         |
-| /{blogname}/search/{query}  | Searching in that particular blog                                                                                                    |
+| /{blogname}/search/{query}     | Searching in that particular blog                                                                                                    |
 | /{blogname}/settings           | Settings for a blog, only accessable to the owner of the blog                                                                        |
 | /{blogname}/compose            | Page at which you write your posts                                                                                                   |
 | /{blogname}/compose/{postname} | Page at which you want to edit an existing post that has either been published or not                                                |
@@ -28,4 +28,4 @@ blogname.domain.tld = domain.tld/blogname
 | \*/tagged/{tag}/\*             | When searching for a tag is relevant it will be used to filter results                                                               |
 |  \*/tagged/{tag}/reverse/\*    | Same as above but in the reverse order                                                                                               |
 | \*/{aDate}/\*                  | If wanting a specific date                                                                                                           |
-|\*/{aDate}/{aDate}/\*           | If wanting a date range                                                                                                              |
+| \*/{aDate}/{aDate}/\*          | If wanting a date range                                                                                                              |
