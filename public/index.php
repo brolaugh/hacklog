@@ -1,3 +1,2 @@
 <?php
-chdir('..');
-new \HackLog\Core\App($_GET['uri']);
+require_once '../init.php';

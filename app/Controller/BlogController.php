@@ -4,7 +4,9 @@
 namespace HackLog\Controller;
 
 
-class BlogController
+use HackLog\Core\Controller;
+
+class BlogController extends Controller 
 {
     private $blogName;
     /**
