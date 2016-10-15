@@ -1,7 +1,9 @@
 {
   "name": "string",
   "url_name": "string",
+  "owner" :"ObjectID",
   "theme": "string",
+  "description": "?string",
   "tags": ["string","string"],
   "created_at": "DateTime",
   "changed_at": "DateTime"

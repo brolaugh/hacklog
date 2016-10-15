@@ -10,13 +10,14 @@ class App
     static $lang;
     static $tagged;
     static $date;
-    static $dateRange = ['start' => NULL, 'end' => NULL];
+    static $dateRange = ['start' => null, 'end' => null];
     static $controller;
     static $method;
 
 
     /**
      * App constructor.
+     *
      * @param string $requestUri | The part of the URL that is behind the domain and port e.g example.com:8080/this/is/the/uri
      */
     public function __construct(string $requestUri)
@@ -39,7 +40,6 @@ class App
          * /{datestart}/{dateend}     | /blogname/2016-10-14/2016-10-27
          *
          * When it has found all the parts listed above it returns the uri back with the parts removed
-         *
          */
     }
 

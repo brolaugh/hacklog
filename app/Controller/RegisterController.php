@@ -43,7 +43,8 @@ class RegisterController extends Controller
     /**
      * Handles the form the user sends in the activateEmail method
      */
-    public function activateEmailRequest(){
+    public function activateEmailRequest()
+    {
 
     }
 }

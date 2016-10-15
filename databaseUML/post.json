@@ -2,6 +2,7 @@
   "title": "string",
   "urlTitle": "string",
   "content": "string",
+  "blog": "ObjectID",
   "tags": [
     "string"
   ],

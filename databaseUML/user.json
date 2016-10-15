@@ -5,7 +5,7 @@
   "password": "string",
   "changedAt": "DateTime",
   "createdAt": "DateTime",
-  "emailConfirmToken": "random string",
+  "emailConfirmToken": "randomString",
   "emailConfirmTokenExpires": "DateTime",
   "emailTokenUsed": "?DateTime", // Set to NULL on emailConfirmToken value change
   "passwordResetToken": "?randomString",
