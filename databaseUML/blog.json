@@ -1,0 +1,8 @@
+{
+  "name": "string",
+  "url_name": "string",
+  "theme": "string",
+  "tags": ["string","string"],
+  "created_at": "DateTime",
+  "changed_at": "DateTime"
+}

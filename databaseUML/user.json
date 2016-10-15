@@ -1,0 +1,20 @@
+// Collection User
+{
+  "username": "string",
+  "email": "string",
+  "password": "string",
+  "changedAt": "DateTime",
+  "createdAt": "DateTime",
+  "emailConfirmToken": "random string",
+  "emailConfirmTokenExpires": "DateTime",
+  "emailTokenUsed": "?DateTime", // Set to NULL on emailConfirmToken value change
+  "passwordResetToken": "?randomString",
+  "passwordResetTokenExpires": "?DateTime",
+  "passwordResetTokenUsed": "?DateTime", // Set to NULL on passwordResetToken value change
+  "blogs": [
+    {
+      "blogname": "string",
+      "objectID": "ObjectID"
+    }
+  ]
+}
