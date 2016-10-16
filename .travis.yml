@@ -9,13 +9,11 @@ php:
   #- hhvm-3.6
   #- hhvm-3.9
   #- hhvm-3.12
-  - hhvm-nightly
 
 matrix:
     fast_finish: true
     allow_failures:
         - php: nightly
-        - php: hhvm-nightly
 
 before_install:
   - sudo echo 'extension= "mongodb.so"' >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
