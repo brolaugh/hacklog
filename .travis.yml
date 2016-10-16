@@ -4,11 +4,11 @@ php:
   - 7.0
   - 7.1
   - nightly
-  - hhvm
-  - hhvm-3.3
-  - hhvm-3.6
-  - hhvm-3.9
-  - hhvm-3.12
+  #- hhvm
+  #- hhvm-3.3
+  #- hhvm-3.6
+  #- hhvm-3.9
+  #- hhvm-3.12
   - hhvm-nightly
 
 matrix:
