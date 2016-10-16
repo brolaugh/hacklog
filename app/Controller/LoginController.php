@@ -13,7 +13,6 @@ class LoginController extends Controller
      */
     public function __construct()
     {
-
     }
 
     /**
@@ -21,7 +20,6 @@ class LoginController extends Controller
      */
     public function index()
     {
-
     }
 
     /**
@@ -29,7 +27,6 @@ class LoginController extends Controller
      */
     public function loginRequest()
     {
-
     }
 
     /**
@@ -37,7 +34,6 @@ class LoginController extends Controller
      */
     public function logoutRequest()
     {
-
     }
 
     /**
@@ -45,7 +41,6 @@ class LoginController extends Controller
      */
     public function passwordReset()
     {
-
     }
 
     /**
@@ -53,7 +48,6 @@ class LoginController extends Controller
      */
     public function passwordResetRequest()
     {
-
     }
 
     /**
@@ -61,7 +55,6 @@ class LoginController extends Controller
      */
     private function loginWithCookie()
     {
-
     }
 
     /**
@@ -69,6 +62,5 @@ class LoginController extends Controller
      */
     private function loginWithoutCookie()
     {
-
     }
 }

@@ -12,7 +12,6 @@ class AccountController extends Controller
      */
     public function __construct()
     {
-
     }
 
     /**
@@ -23,7 +22,6 @@ class AccountController extends Controller
      */
     public function index()
     {
-
     }
 
     /**
@@ -32,6 +30,5 @@ class AccountController extends Controller
      */
     public function newBlogRequest()
     {
-
     }
 }

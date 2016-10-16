@@ -16,7 +16,6 @@ class BlogController extends Controller
      */
     public function __construct(string $blogName)
     {
-
     }
 
     /**
@@ -27,7 +26,6 @@ class BlogController extends Controller
      */
     public function index(string $postName = '')
     {
-
     }
 
     /**
@@ -37,7 +35,6 @@ class BlogController extends Controller
      */
     public function post(string $postName = '')
     {
-
     }
 
     /**
@@ -48,7 +45,6 @@ class BlogController extends Controller
      */
     public function search(string $query)
     {
-
     }
 
     /**
@@ -58,7 +54,6 @@ class BlogController extends Controller
      */
     public function compose(string $urlTitle = '')
     {
-
     }
 
     /**
@@ -66,7 +61,6 @@ class BlogController extends Controller
      */
     public function composeRequest()
     {
-
     }
 
     /**
@@ -74,7 +68,6 @@ class BlogController extends Controller
      */
     public function settings()
     {
-
     }
 
     /**
@@ -82,6 +75,5 @@ class BlogController extends Controller
      */
     public function settingsRequest()
     {
-
     }
 }

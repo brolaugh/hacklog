@@ -24,7 +24,6 @@ class Redirect
      */
     public static function toExternal(string $adress)
     {
-
     }
 
     /**

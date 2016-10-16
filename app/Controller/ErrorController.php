@@ -17,7 +17,6 @@ class ErrorController extends Controller
      */
     public function error301($redirectURI)
     {
-
     }
 
     /**
@@ -26,7 +25,6 @@ class ErrorController extends Controller
      */
     public function error400()
     {
-
     }
 
     /**
@@ -38,7 +36,6 @@ class ErrorController extends Controller
      */
     public function error403($redirectURI)
     {
-
     }
 
     /**
@@ -49,7 +46,6 @@ class ErrorController extends Controller
      */
     public function error404()
     {
-
     }
 
     /**
@@ -58,7 +54,6 @@ class ErrorController extends Controller
      */
     public function error418()
     {
-
     }
 
     /**
@@ -68,7 +63,6 @@ class ErrorController extends Controller
      */
     public function error429()
     {
-
     }
 
     /**
@@ -77,7 +71,6 @@ class ErrorController extends Controller
      */
     public function error498()
     {
-
     }
 
     /**
@@ -86,6 +79,5 @@ class ErrorController extends Controller
      */
     public function error499()
     {
-
     }
 }

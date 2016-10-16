@@ -52,7 +52,6 @@ class Session
         } else {
             $_SESSION[$key][] = $value;
         }
-
     }
 
     /**
@@ -71,7 +70,6 @@ class Session
         } else {
             $_SESSION[$key][$assocKey] = $value;
         }
-
     }
 
     /**
@@ -96,7 +94,6 @@ class Session
         if (session_id() == '') {
             session_start();
         }
-
     }
 
     /**
@@ -108,6 +105,5 @@ class Session
         if (session_id() != '') {
             session_destroy();
         }
-
     }
 }

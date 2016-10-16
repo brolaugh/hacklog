@@ -13,7 +13,6 @@ class RegisterController extends Controller
      */
     public function __construct()
     {
-
     }
 
     /**
@@ -21,7 +20,6 @@ class RegisterController extends Controller
      */
     public function index()
     {
-
     }
 
     /**
@@ -29,7 +27,6 @@ class RegisterController extends Controller
      */
     public function send()
     {
-
     }
 
     /**
@@ -37,7 +34,6 @@ class RegisterController extends Controller
      */
     public function activateEmail()
     {
-
     }
 
     /**
@@ -45,6 +41,5 @@ class RegisterController extends Controller
      */
     public function activateEmailRequest()
     {
-
     }
 }

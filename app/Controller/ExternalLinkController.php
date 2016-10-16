@@ -12,6 +12,5 @@ class ExternalLinkController
      */
     public function index()
     {
-
     }
 }

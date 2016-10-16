@@ -14,7 +14,6 @@ class SearchController extends Controller
      */
     public function index($query)
     {
-
     }
 
     /**
@@ -24,7 +23,6 @@ class SearchController extends Controller
      */
     public function blog($query)
     {
-
     }
 
     /**
@@ -34,6 +32,5 @@ class SearchController extends Controller
      */
     public function post($query)
     {
-
     }
 }

@@ -3,7 +3,6 @@
 
 namespace HackLog\Document;
 
-
 class PostDocument extends TaggableDocument
 {
     private $title;
