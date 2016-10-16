@@ -3,6 +3,9 @@
 
 namespace HackLog\Core;
 
+use Exception\NoConfigurationException;
+use HackLog\Exception\NoConfigurationChooserException;
+
 class App
 {
     public static $page;
@@ -12,6 +15,7 @@ class App
     public static $dateRange = ['start' => null, 'end' => null];
     public static $controller;
     public static $method;
+    public static $configuration;
 
 
     /**
@@ -24,6 +28,7 @@ class App
         /**
          *  Bootstraps the application and calls the chosen controller and controller method according to $requestUri
          */
+        $this->loadConfig();
     }
 
     private function gerUriParameters(string $requestUri) : array
@@ -40,5 +45,22 @@ class App
          *
          * When it has found all the parts listed above it returns the uri back with the parts removed
          */
+    }
+
+    /**
+     * Reads the wanted config in the config.ini file found in the project root
+     * If the wanted config cant be found in the config folder an NoConfigurationException is thrown
+     * @throws NoConfigurationException
+     */
+    private function loadConfig(){
+        $configurationChooser  = parse_ini_file('config.ini');
+        if($configurationChooser == false){
+            throw new NoConfigurationChooserException();
+        }
+        $configuration = parse_ini_file("config/".$configurationChooser['configuration'].".ini");
+        if($configuration == false){
+            throw new NoConfigurationException();
+        }
+        self::$configuration = $configuration;
     }
 }
