@@ -20,7 +20,7 @@ matrix:
         - php: hhvm-nightly
 
 before_install:
-  - sudo echo "extension mongodb.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
+  - sudo echo 'extension= "mongodb.so"' >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
 
 install:
   - composer install
