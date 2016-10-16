@@ -1,5 +1,6 @@
 # HackLog
 [![Build Status](https://travis-ci.org/brolaugh/hacklog.svg?branch=master)](https://travis-ci.org/brolaugh/hacklog)
+
 A multiuser blog portal with support for blogs and personalities per user.
 
 # Conceive
