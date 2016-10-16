@@ -8,6 +8,7 @@
   ],
   "visibility": "int",
   "publishedAt": "DateTime",
+  "language" : "string",
   "comments": [
     {
       "user": "ObjectID",
