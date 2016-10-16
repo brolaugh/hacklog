@@ -3,14 +3,14 @@
 
 namespace HackLog\Core;
 
-
 class Redirect
 {
     /**
      * Redirects to an
      * @param string $location
      */
-    public static function to(string $location){
+    public static function to(string $location)
+    {
         header("Location:/$location");
         exit();
     }
@@ -21,7 +21,8 @@ class Redirect
      *
      * @param string $adress
      */
-    public static function toExternal(string $adress){
+    public static function toExternal(string $adress)
+    {
 
     }
     /**
@@ -29,7 +30,8 @@ class Redirect
      *
      * @param string $adress
      */
-    public static function toExternalReal(string $adress){
+    public static function toExternalReal(string $adress)
+    {
         header("Location: $adress");
         exit();
     }

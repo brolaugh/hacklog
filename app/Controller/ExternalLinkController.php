@@ -3,7 +3,6 @@
 
 namespace Controller;
 
-
 class ExternalLinkController
 {
     /**
@@ -11,7 +10,8 @@ class ExternalLinkController
      * marked unsafe
      * Gives a link to the actual page
      */
-    public function index(){
+    public function index()
+    {
 
     }
 }
