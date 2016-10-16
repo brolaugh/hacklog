@@ -3,14 +3,13 @@
 
 namespace HackLog\Core;
 
-class Controller
+abstract class Controller
 {
     /**
      * Controller constructor.
      */
     public function __construct()
     {
-
     }
 
     /**
@@ -32,6 +31,5 @@ class Controller
      */
     private function prepareTemplatingEngine(string $theme)
     {
-
     }
 }
