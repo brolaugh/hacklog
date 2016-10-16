@@ -7,6 +7,7 @@ class Redirect
 {
     /**
      * Redirects to an
+     *
      * @param string $location
      */
     public static function to(string $location)
@@ -25,6 +26,7 @@ class Redirect
     {
 
     }
+
     /**
      * Same as method toExternal but without the protecting layer
      *

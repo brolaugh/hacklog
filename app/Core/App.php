@@ -24,7 +24,8 @@ class App
     /**
      * App constructor.
      *
-     * @param string $requestUri | The part of the URL that is behind the domain and port e.g example.com:8080/this/is/the/uri
+     * @param string $requestUri | The part of the URL that is behind the domain and port e.g
+     *                           example.com:8080/this/is/the/uri
      */
     public function __construct(string $requestUri)
     {
@@ -56,7 +57,7 @@ class App
         if (isset($uri[0]) && strlen($uri[0]) == 2) {
             $key = array_search($uri[0], Language::AVAILABLE_LANGUAGES);
             $languageClassName = ($key) ? Language::AVAILABLE_LANGUAGES[$key]
-                    : Language::AVAILABLE_LANGUAGES[self::$configuration['standardLanguage']];
+                : Language::AVAILABLE_LANGUAGES[self::$configuration['standardLanguage']];
         } else {
             $languageClassName = Language::AVAILABLE_LANGUAGES[self::$configuration['standardLanguage']];
         }
@@ -69,6 +70,7 @@ class App
     /**
      * Reads the wanted config in the config.ini file found in the project root
      * If the wanted config cant be found in the config folder an NoConfigurationException is thrown
+     *
      * @throws NoConfigurationException
      */
     private function loadConfig()

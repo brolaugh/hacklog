@@ -28,7 +28,7 @@ class Session
      * Sets the value to the specified key
      *
      * @param string $key
-     * @param $value
+     * @param        $value
      */
     public static function set(string $key, $value)
     {
@@ -39,7 +39,7 @@ class Session
      * Adds the value to the specified array
      *
      * @param string $key
-     * @param $value
+     * @param        $value
      */
     public static function add(string $key, $value)
     {
@@ -54,9 +54,9 @@ class Session
      * Adds the value to the specified array with assocKey as an associate key
      * Useful for when wanting to separate different kinds of problems
      *
-     * @param string   $key
-     * @param $assocKey
-     * @param $value
+     * @param string $key
+     * @param        $assocKey
+     * @param        $value
      */
     public static function addAssoc(string $key, $assocKey, $value)
     {

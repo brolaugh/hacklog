@@ -11,6 +11,7 @@ class CSRF
     /**
      * Generates a CSRF token if it's not already generated in this request
      * Stores the token in a session for validation
+     *
      * @return string
      */
     public static function generate() : string
@@ -25,6 +26,7 @@ class CSRF
     /**
      * Checks whether the CSRF token provided by the client is valid
      * The token consumed and deleted opon validation
+     *
      * @param $clientToken
      * @return bool
      */

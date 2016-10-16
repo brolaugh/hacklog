@@ -14,9 +14,10 @@ class Controller
     }
 
     /**
-     * @param string $page     | The page that is to be shown
-     * @param array  $viewData | The data that the view has to work with
-     * @param string $theme    | What theme that should be used for the view , this is also decides what template engine that should be used
+     * @param string $page | The page that is to be shown
+     * @param array $viewData | The data that the view has to work with
+     * @param string $theme | What theme that should be used for the view , this is also decides what template
+     *                         engine that should be used
      */
     protected function view($page, $viewData = [], $theme = "bootstrap-material")
     {
