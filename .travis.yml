@@ -23,8 +23,10 @@ matrix:
 
 before_script:
   - composer self-update
-  - echo "extension mongodb.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
 
+before_install:
+  - echo "extension mongodb.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
+  
 install:
   - composer install
 
