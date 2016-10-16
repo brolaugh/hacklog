@@ -1,11 +1,11 @@
 <?php
 
 
-namespace HackLog\Model;
+namespace HackLog\Document;
 
-use HackLog\Core\Model;
+use HackLog\Core\Document;
 
-class UserModel extends Model
+class UserDocument extends Document
 {
     private $username;
     private $email;

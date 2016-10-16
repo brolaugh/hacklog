@@ -7,11 +7,20 @@ use MongoDB\BSON\ObjectID;
 use MongoDB\BSON\Persistable;
 use MongoDB\BSON\UTCDateTime;
 
-abstract class Model implements Persistable
+abstract class Document implements Persistable
 {
     protected $id;
     protected $createdAt;
     protected $changedAt;
+    /**
+     * Tells the object what to do when the commit method is called
+     *
+     * @var int
+     */
+    protected $commitMethod = self::COMMIT_METHOD_VOID;
+    const COMMIT_METHOD_VOID = 0;
+    const COMMIT_METHOD_INSERT = 1;
+    const COMMIT_METHOD_UPDATE = 2;
 
     public function __construct()
     {

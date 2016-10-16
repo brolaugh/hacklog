@@ -1,9 +1,10 @@
 <?php
 
 
-namespace HackLog\Model;
+namespace HackLog\Document;
 
-class PostModel extends TaggableModel
+
+class PostDocument extends TaggableDocument
 {
     private $title;
     private $urlTitle;

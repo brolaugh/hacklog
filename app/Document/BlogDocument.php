@@ -1,9 +1,9 @@
 <?php
 
 
-namespace HackLog\Model;
+namespace HackLog\Document;
 
-class BlogModel extends TaggableModel
+class BlogDocument extends TaggableDocument
 {
     private $name;
     private $urlName;
