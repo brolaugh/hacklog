@@ -5,7 +5,7 @@ namespace HackLog\Model;
 
 use HackLog\Core\Model;
 
-class User extends Model
+class UserModel extends Model
 {
     private $username;
     private $email;

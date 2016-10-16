@@ -5,7 +5,7 @@ namespace HackLog\Model;
 
 use HackLog\Core\Model;
 
-class Taggable extends Model
+class TaggableModel extends Model
 {
     protected $tags = [];
 

@@ -3,7 +3,7 @@
 
 namespace HackLog\Model;
 
-class Post extends Taggable
+class PostModel extends TaggableModel
 {
     private $title;
     private $urlTitle;
