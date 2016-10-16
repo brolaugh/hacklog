@@ -8,8 +8,11 @@ use HackLog\Exception\NoConfigurationChooserException;
 
 class App
 {
-    public static $page;
+    /**
+     * @var Language $lang
+     */
     public static $lang;
+    public static $page;
     public static $tagged;
     public static $date;
     public static $dateRange = ['start' => null, 'end' => null];
@@ -29,6 +32,8 @@ class App
          *  Bootstraps the application and calls the chosen controller and controller method according to $requestUri
          */
         $this->loadConfig();
+        $this->gerUriParameters($requestUri);
+        echo self::$lang::WARNING_USERNAME_ALREADY_TAKEN;
     }
 
     private function gerUriParameters(string $requestUri) : array
@@ -45,6 +50,20 @@ class App
          *
          * When it has found all the parts listed above it returns the uri back with the parts removed
          */
+        $uri = explode('/', urldecode($requestUri));
+
+        // Chooses the Language
+        if (isset($uri[0]) && strlen($uri[0]) == 2) {
+            $key = array_search($uri[0], Language::AVAILABLE_LANGUAGES);
+            $languageClassName = ($key) ? Language::AVAILABLE_LANGUAGES[$key]
+                    : Language::AVAILABLE_LANGUAGES[self::$configuration['standardLanguage']];
+        } else {
+            $languageClassName = Language::AVAILABLE_LANGUAGES[self::$configuration['standardLanguage']];
+        }
+        self::$lang = "\\HackLog\\Language\\$languageClassName";
+
+
+        return [];
     }
 
     /**
@@ -52,13 +71,14 @@ class App
      * If the wanted config cant be found in the config folder an NoConfigurationException is thrown
      * @throws NoConfigurationException
      */
-    private function loadConfig(){
-        $configurationChooser  = parse_ini_file('config.ini');
-        if($configurationChooser == false){
+    private function loadConfig()
+    {
+        $configurationChooser = parse_ini_file('config.ini');
+        if ($configurationChooser == false) {
             throw new NoConfigurationChooserException();
         }
-        $configuration = parse_ini_file("config/".$configurationChooser['configuration'].".ini");
-        if($configuration == false){
+        $configuration = parse_ini_file("config/" . $configurationChooser['configuration'] . ".ini");
+        if ($configuration == false) {
             throw new NoConfigurationException();
         }
         self::$configuration = $configuration;
