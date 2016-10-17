@@ -2,7 +2,7 @@
 
 use \PHPUnit\Framework\TestCase;
 
-class TestURIParsing extends TestCase
+class URIParsingTest extends TestCase
 {
     public function testOptionalURI()
     {

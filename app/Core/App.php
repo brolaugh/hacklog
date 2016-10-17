@@ -3,8 +3,10 @@
 
 namespace HackLog\Core;
 
-use Exception\NoConfigurationException;
+use HackLog\Exception\ConfigurationChooserException;
+use HackLog\Exception\ConfigurationException;
 use HackLog\Exception\NoConfigurationChooserException;
+use HackLog\Exception\NoConfigurationException;
 
 class App
 {
@@ -50,20 +52,32 @@ class App
 
     /**
      * Reads the wanted config in the config.ini file found in the project root
-     * If the wanted config cant be found in the config folder an NoConfigurationException is thrown
+     * If the wanted config cant be found in the config folder a ConfigurationException is thrown
      *
-     * @throws NoConfigurationException
+     * @throws ConfigurationException
      */
     private function loadConfig()
     {
+
+        $configurationChooserPath = 'config.ini';
+        if (!file_exists($configurationChooserPath)) {
+            throw ConfigurationChooserException::fileNotFound($configurationChooserPath);
+        }
         $configurationChooser = parse_ini_file('config.ini');
-        if ($configurationChooser == false) {
-            throw new NoConfigurationChooserException();
+        if (empty($configurationChooser)) {
+            throw ConfigurationChooserException::fileEmpty($configurationChooserPath);
+        }
+
+
+        $configurationPath = "config/" . $configurationChooser['configuration'] . ".ini";
+        if (!file_exists($configurationPath)) {
+            throw ConfigurationException::fileNotFound($configurationPath);
         }
         $configuration = parse_ini_file("config/" . $configurationChooser['configuration'] . ".ini");
-        if ($configuration == false) {
-            throw new NoConfigurationException();
+        if(empty($configuration)){
+            throw ConfigurationException::fileEmpty($configurationPath);
         }
+
         self::$configuration = $configuration;
     }
 }
