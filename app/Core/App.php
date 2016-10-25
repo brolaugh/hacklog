@@ -50,6 +50,25 @@ class App
          */
     }
 
+
+    private function getUriParametersAsGetVariables()
+    {
+        /**
+         * Reads all available $_GET variables
+         * languageCode | ISO 639-1 language code
+         * page         | an int that states how many items to skip in the database. This number is multiplied
+         *                  with per_page to get the offset for the database
+         * per_page     | an int that states how many items that are wanted in the response
+         * search       | if the client only wants data that contains a specific query
+         * date         | if set only results from the specified date will be sent in the response
+         * startdate    | if set only results that have been created/changed/published after this date will be sent
+         *                  in the response
+         * enddate    | if set only results that have been created/changed/published before this date will be sent
+         *                  in the response
+         *
+         */
+    }
+
     /**
      * Reads the wanted config in the config.ini file found in the project root
      * If the wanted config cant be found in the config folder a ConfigurationException is thrown
