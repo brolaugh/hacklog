@@ -32,4 +32,7 @@ abstract class Controller
     private function prepareTemplatingEngine(string $theme)
     {
     }
+    /**
+     * All methods that exist only to receive forms should append "Request" to the name of the method
+     */
 }
