@@ -3,7 +3,6 @@
 
 namespace HackLog\Exception;
 
-
 class ConfigurationException extends \Exception
 {
     public static function fileEmpty($configurationPath)
@@ -15,5 +14,4 @@ class ConfigurationException extends \Exception
     {
         return new static("Configuration file $filePath not found");
     }
-
 }

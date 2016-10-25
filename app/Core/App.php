@@ -74,7 +74,7 @@ class App
             throw ConfigurationException::fileNotFound($configurationPath);
         }
         $configuration = parse_ini_file("config/" . $configurationChooser['configuration'] . ".ini");
-        if(empty($configuration)){
+        if (empty($configuration)) {
             throw ConfigurationException::fileEmpty($configurationPath);
         }
 
