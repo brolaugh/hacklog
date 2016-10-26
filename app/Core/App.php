@@ -5,8 +5,6 @@ namespace HackLog\Core;
 
 use HackLog\Exception\ConfigurationChooserException;
 use HackLog\Exception\ConfigurationException;
-use HackLog\Exception\NoConfigurationChooserException;
-use HackLog\Exception\NoConfigurationException;
 
 class App
 {
