@@ -1,5 +1,7 @@
 # HackLog
-[![Build Status](https://travis-ci.org/brolaugh/hacklog.svg?branch=master)](https://travis-ci.org/brolaugh/hacklog)
+[![Travis Build Status](https://travis-ci.org/brolaugh/hacklog.svg?branch=master)](https://travis-ci.org/brolaugh/hacklog)
+[![Code Climate](https://codeclimate.com/github/brolaugh/hacklog/badges/gpa.svg)](https://codeclimate.com/github/brolaugh/hacklog)
+[![Semaphore Build Status](https://semaphoreci.com/api/v1/brolaugh/hacklog/branches/master/badge.svg)](https://semaphoreci.com/brolaugh/hacklog)
 
 A multiuser blog portal with support for blogs and personalities per user.
 
