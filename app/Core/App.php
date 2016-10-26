@@ -63,7 +63,7 @@ class App
          *                  in the response
          * enddate    | if set only results that have been created/changed/published before this date will be sent
          *                  in the response
-         * 
+         *
          */
     }
 
