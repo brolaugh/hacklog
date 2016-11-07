@@ -13,17 +13,7 @@
     {
       "user": "ObjectID",
       "text": "string",
-      "createdAt": "DateTime",
-      "childComments": [
-        {
-          "user": "ObjectID",
-          "text": "string",
-          "createdAt": "DateTime",
-          "childComments": [
-            "ChildComments nest into them self"
-          ]
-        }
-      ]
+      "createdAt": "DateTime"
     }
   ],
   "changedAt": "DateTime",
