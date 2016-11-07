@@ -1,0 +1,43 @@
+{% extends 'master.twig' %}
+
+{% block channel %}
+<title>{{ blog.name|e }}</title>
+<link>{{ general.url }}/{{ blog.url_name }}</link>
+<description>{{ blog.description|e }}</description>
+<category>
+    {% for category in blog.categories %}
+        <category>{{ category|e }}</category>
+    {% endfor %}
+</category>
+{% if not empty(blog.language ) %}
+    <language>{{ post.language|e }}</language>
+{% endif %}
+    {% for post in posts %}
+        <item>
+            <title>{{ post.title }}</title>
+            <link>{{ general.url }}/{{ blog.urlTitle }}/{{ post.url_title }}</link>
+            <description>{{ post.content|e }}</description> <!-- Solve need for shorter content -->
+            {% if blog.showEmail %}
+                <pubDate>{{ post.publishedAt|e }}</pubDate>
+            {% endif %}
+            {% if not empty(post.language ) %}
+                <language>{{ post.language|e }}</language>
+            {% endif %}
+        </item>
+    {% endfor %}
+<webmaster>{{ general.webmaster|e }}</webmaster>
+{% if pagination is defined %}
+<link rel="self" type="application/rss+xml"
+      href="{{ general.url }}/{{ blog.urlTitle }}/{{ post.url_title }}/rss?page={{ pagination.page }}"/>
+<link rel="first" href="{{ general.url }}/{{ blog.urlTitle }}/{{ post.url_title }}/rss"/>
+{% if pagination.page > 1 %}
+    <link rel="previous"
+          href="{{ general.url }}/{{ blog.urlTitle }}/{{ post.url_title }}/rss?page={{ pagination.page-1 }}"/>
+{% endif %}
+{% if pagination.page+1 => pagination.lastPage %}
+    <link rel="next"
+          href="{{ general.url }}/{{ blog.urlTitle }}/{{ post.url_title }}/rss?page={{ pagination.page+1 }}"/>
+{% endif %}
+<link rel="last" href="{{ general.url }}/{{ blog.urlTitle }}/{{ post.url_title }}/rss?page={{ pagination.lastPage }}"/>
+<docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+{% endblock %}
