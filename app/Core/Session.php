@@ -12,7 +12,7 @@ class Session
      */
     public static function get(string $key)
     {
-        return isset($_SESSION[$key]) ? $_SESSION[$key] : false;
+        return $_SESSION[$key] ?? false;
     }
 
     /**

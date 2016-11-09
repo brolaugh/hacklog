@@ -60,8 +60,6 @@ class Request
      */
     public static function cookie($key)
     {
-        if (isset($_COOKIE[$key])) {
-            return $_COOKIE[$key];
-        }
+        return $_COOKIE[$key] ?? null;
     }
 }
