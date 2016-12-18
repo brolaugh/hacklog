@@ -2,10 +2,10 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <title>{% block title %} Hacklog{% endblock %}</title>
-    <meta name="description" content="{% block description %}{% endblock %}"/>
-    <meta name="keywords" content="{% block keywords %}{% endblock %}"/>
-    <meta name="author" content="{% block author %}{% endblock %}"/>
+    <title>{% block title %}Hacklog{% endblock %}</title>
+    <meta name="description" content="{% block description %}{{ default.description }}{% endblock %}"/>
+    <meta name="keywords" content="{% block keywords %}{{ default.keywords }}{% endblock %}"/>
+    <meta name="author" content="{% block author %}{{ default.author }}{% endblock %}"/>
     {% block style %} {% endblock %}
     {% block headScripts %} {% endblock %}
 </head>
